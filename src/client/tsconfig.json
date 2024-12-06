@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["es6", "es2015", "es2017", "es2019", "dom"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["types/*"]
+    },
+    "typeRoots": [
+      "./typings",
+      "../shared/typings",
+      "../../node_modules/@types"
+    ],
+    "types": [
+      "react",
+      "react-dom",
+      "react-router-dom",
+      "node",
+      "jest",
+      "webpack-env"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "sourceMap": true,
+    "noEmit": true,
+    "downlevelIteration": true
+  },
+  "include": [
+    "./**/*.ts",
+    "../shared/**/*.ts",
+    "./**/*.tsx",
+    "../typings/**/*.ts"
+  ],
+  "exclude": ["node_modules", "build", "dist"]
+}

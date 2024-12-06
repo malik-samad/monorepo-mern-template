@@ -1,0 +1,6 @@
+{
+  "watch": ["src/server"],
+  "ext": "ts,json",
+  "ignore": ["src/**/*.spec.ts", "src/**/*.test.ts", "src/**/__tests__/**", "src/**/__mocks__/**"],
+  "exec": "cross-env NODE_CONFIG_ENV=development NODE_ENV=local ts-node src/server/index.ts"
+}
